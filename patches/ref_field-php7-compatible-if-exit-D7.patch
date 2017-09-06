@@ -1,0 +1,16 @@
+Index: profiles/dkan/modules/contrib/ref_field/ref_field_sync.module
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- profiles/dkan/modules/contrib/ref_field/ref_field_sync.module	(revision )
++++ profiles/dkan/modules/contrib/ref_field/ref_field_sync.module	(revision )
+@@ -48,7 +48,7 @@
+ 
+     // Entity must support entity_save().
+     if (!entity_type_supports($entity, 'save')) {
+-      continue;
++      return;
+     }
+     $entity_info = entity_get_info($entity);
+ 

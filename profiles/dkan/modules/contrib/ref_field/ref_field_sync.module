@@ -48,7 +48,7 @@ function ref_field_sync_form_field_ui_field_edit_form_alter(&$form, &$form_state
 
     // Entity must support entity_save().
     if (!entity_type_supports($entity, 'save')) {
-      continue;
+      return;
     }
     $entity_info = entity_get_info($entity);
 
